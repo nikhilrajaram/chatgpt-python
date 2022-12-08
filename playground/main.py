@@ -1,6 +1,6 @@
 from chatgpt import Conversation
 
-conversation = Conversation(config_path="./config.json")
+conversation = Conversation()
 
 print(
     conversation.chat(

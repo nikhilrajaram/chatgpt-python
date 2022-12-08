@@ -1,30 +1,12 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+import os
+
 from chatgpt import Conversation
+from chatgpt.cmd_parse import CmdParse
 
 
 def main():
     conversation = Conversation()
-
-    while True:
-        message = input('> ').lower().strip()
-
-        if not message:
-            continue
-
-        if message == 'exit':
-            break
-
-        elif message == 'reset':
-            conversation.reset()
-            continue
-
-        elif message == 'clear':
-            print('\033c', end='')
-            continue
-
-        print(conversation.chat(message), end='\n\n')
-
+    CmdParse(conversation=conversation).cmdloop()
 
 if __name__ == '__main__':
     main()

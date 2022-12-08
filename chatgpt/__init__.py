@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 from .chatgpt import *
 
-__version__ = '1.2212.1'
+__version__ = '1.0.0'

@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 from setuptools import setup
 from setuptools import find_packages
 import chatgpt
@@ -9,7 +6,7 @@ setup(
     name='chatgpt',
     version=chatgpt.__version__,
     description='',
-    url='https://github.com/brunneis/chatgpt-python',
+    url='https://github.com/nikhilrajaram/chatgpt-python',
     author='Rodrigo Martínez Castaño, Alejandro Suárez',
     author_email='rodrigo@martinez.gal, alejandrosuarez.eu@gmail.com',
     license='GNU General Public License v3 (GPLv3)',
